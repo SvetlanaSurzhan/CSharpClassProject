@@ -1,0 +1,11 @@
+/Users/user/Documents/CodeLouisville/Spring2020/C#ClassProject/CSharpClassProject/src/bin/Debug/netcoreapp3.1/SvetlanaSurzhan.CodeLou.ExerciseProject
+/Users/user/Documents/CodeLouisville/Spring2020/C#ClassProject/CSharpClassProject/src/bin/Debug/netcoreapp3.1/SvetlanaSurzhan.CodeLou.ExerciseProject.deps.json
+/Users/user/Documents/CodeLouisville/Spring2020/C#ClassProject/CSharpClassProject/src/bin/Debug/netcoreapp3.1/SvetlanaSurzhan.CodeLou.ExerciseProject.runtimeconfig.json
+/Users/user/Documents/CodeLouisville/Spring2020/C#ClassProject/CSharpClassProject/src/bin/Debug/netcoreapp3.1/SvetlanaSurzhan.CodeLou.ExerciseProject.runtimeconfig.dev.json
+/Users/user/Documents/CodeLouisville/Spring2020/C#ClassProject/CSharpClassProject/src/bin/Debug/netcoreapp3.1/SvetlanaSurzhan.CodeLou.ExerciseProject.dll
+/Users/user/Documents/CodeLouisville/Spring2020/C#ClassProject/CSharpClassProject/src/bin/Debug/netcoreapp3.1/SvetlanaSurzhan.CodeLou.ExerciseProject.pdb
+/Users/user/Documents/CodeLouisville/Spring2020/C#ClassProject/CSharpClassProject/src/obj/Debug/netcoreapp3.1/SvetlanaSurzhan.CodeLou.ExerciseProject.csprojAssemblyReference.cache
+/Users/user/Documents/CodeLouisville/Spring2020/C#ClassProject/CSharpClassProject/src/obj/Debug/netcoreapp3.1/SvetlanaSurzhan.CodeLou.ExerciseProject.AssemblyInfoInputs.cache
+/Users/user/Documents/CodeLouisville/Spring2020/C#ClassProject/CSharpClassProject/src/obj/Debug/netcoreapp3.1/SvetlanaSurzhan.CodeLou.ExerciseProject.AssemblyInfo.cs
+/Users/user/Documents/CodeLouisville/Spring2020/C#ClassProject/CSharpClassProject/src/obj/Debug/netcoreapp3.1/SvetlanaSurzhan.CodeLou.ExerciseProject.dll
+/Users/user/Documents/CodeLouisville/Spring2020/C#ClassProject/CSharpClassProject/src/obj/Debug/netcoreapp3.1/SvetlanaSurzhan.CodeLou.ExerciseProject.pdb
