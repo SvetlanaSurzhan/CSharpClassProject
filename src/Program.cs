@@ -6,6 +6,14 @@ namespace SvetlanaSurzhan.CodeLou.ExerciseProject
     {
         static void Main(string[] args)
         {
+            // var  string addingStudent;
+            // Console.WriteLine("Would you like to continue inputting students? [Y/N]");
+            // addingStudent = Console.ReadLine().ToLower();
+            // while (addingStudent == "y")
+            // {
+            //     InputStudent();
+            // }
+
             var inputtingStudent = true;
             while (inputtingStudent)
             {
