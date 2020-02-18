@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 
 namespace SvetlanaSurzhan.CodeLou.ExerciseProject
 {
@@ -6,16 +7,64 @@ namespace SvetlanaSurzhan.CodeLou.ExerciseProject
     {
         static void Main(string[] args)
         {
-            var inputtingStudent = true;
-            while (inputtingStudent)
+            List<Student> _allStudents = new List<Student>();
+            
+            _allStudents.Add(new Student(){
+                StudentId = 1,
+                FirstName = "Test",
+                ClassName = "a"
+            });            
+            
+            _allStudents.Add(new Student(){
+                StudentId = 2,
+                FirstName = "Test2",
+                ClassName = "b"
+            });
+
+            bool showMenu = true;
+
+            while (showMenu)
             {
-                InputStudent();
-                Console.WriteLine("Would you like to continue inputting students? [Y/N]");
-                inputtingStudent = Console.ReadLine().ToLower() == "y";
+                showMenu = ShowMainMenu(ref _allStudents);
+            }
+        }
+        static bool ShowMainMenu(ref List<Student> allStudents)
+        {
+
+            CreateMainManue();
+
+            var inputOption = Console.ReadLine();
+
+            switch (inputOption)
+            {
+                case "1":
+                    allStudents = InputStudent(allStudents);
+                    return true;
+                case "2":
+                    ShowListOfStudents(allStudents);
+                    return true;
+                case "3":
+                    ShowStudentsByClassName(allStudents);
+                    return true;
+                case "4":
+                    return false;
+                default:
+                    return true;
             }
         }
 
-        static void InputStudent()
+        static void CreateMainManue()
+        {
+            Console.Clear();
+            Console.WriteLine("Menu");
+            Console.WriteLine("1) New Student");
+            Console.WriteLine("2) List Students");
+            Console.WriteLine("3) Find Student By Class");
+            Console.WriteLine("4) Exit");
+            Console.Write("\r\nSelect an option: ");
+        }
+
+        static List<Student> InputStudent(List<Student> students)
         {
             Console.WriteLine("Enter Student Id");
             var studentId = Convert.ToInt32(Console.ReadLine());
@@ -40,10 +89,50 @@ namespace SvetlanaSurzhan.CodeLou.ExerciseProject
             studentRecord.StartDate = startDate;
             studentRecord.LastClassCompleted = lastClass;
             studentRecord.LastClassCompletedOn = lastCompletedOn;
-            Console.WriteLine($"Student Id | Name |  Class "); ;
+
+            students.Add(studentRecord);
+
+            Console.WriteLine($"Student Id | Name |  Class ");
             Console.WriteLine($"{studentRecord.StudentId} | {studentRecord.FirstName} {studentRecord.LastName} | {studentRecord.ClassName} "); ;
+            
+            ShowListOfStudents(students);
+            Console.ReadKey();
+            //add current studet to list
+
+            return students;
+        }
+
+        static void ShowListOfStudents(List<Student> students)
+        {
+            Console.WriteLine($"Student Id | Name |  Class ");
+
+            foreach (var studentRecord in students)
+            {
+                Console.WriteLine($"{studentRecord.StudentId} | {studentRecord.FirstName} {studentRecord.LastName} | {studentRecord.ClassName} ");
+            }
+
+            Console.ReadKey();
+        }
+
+        static void ShowStudentsByClassName(List<Student> students)
+        {
+            Console.WriteLine("Please enter class name.");
+
+            var inputtedClassName = Console.ReadLine().ToLower();
+            var fliteredListOfStudents = students.FindAll(student => student.ClassName == inputtedClassName);
+
+            if (fliteredListOfStudents != null)
+            {
+                ShowListOfStudents(fliteredListOfStudents);
+            }
+            else
+            {
+                Console.WriteLine($"There is no student in '{inputtedClassName}' Class");
+            }
+
             Console.ReadKey();
         }
     }
-}    
+
+}
 
