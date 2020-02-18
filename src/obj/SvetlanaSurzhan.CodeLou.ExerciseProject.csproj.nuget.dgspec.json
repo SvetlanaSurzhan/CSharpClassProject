@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/Users/user/Documents/CodeLouisville/Spring2020/C#ClassProject/CSharpClassProject/src/SvetlanaSurzhan.CodeLou.ExerciseProject.csproj": {}
+    "/Users/user/Documents/CodeLouisville/Spring2020/CSharpProjects/CSharpClassProject/src/SvetlanaSurzhan.CodeLou.ExerciseProject.csproj": {}
   },
   "projects": {
-    "/Users/user/Documents/CodeLouisville/Spring2020/C#ClassProject/CSharpClassProject/src/SvetlanaSurzhan.CodeLou.ExerciseProject.csproj": {
+    "/Users/user/Documents/CodeLouisville/Spring2020/CSharpProjects/CSharpClassProject/src/SvetlanaSurzhan.CodeLou.ExerciseProject.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/user/Documents/CodeLouisville/Spring2020/C#ClassProject/CSharpClassProject/src/SvetlanaSurzhan.CodeLou.ExerciseProject.csproj",
+        "projectUniqueName": "/Users/user/Documents/CodeLouisville/Spring2020/CSharpProjects/CSharpClassProject/src/SvetlanaSurzhan.CodeLou.ExerciseProject.csproj",
         "projectName": "SvetlanaSurzhan.CodeLou.ExerciseProject",
-        "projectPath": "/Users/user/Documents/CodeLouisville/Spring2020/C#ClassProject/CSharpClassProject/src/SvetlanaSurzhan.CodeLou.ExerciseProject.csproj",
+        "projectPath": "/Users/user/Documents/CodeLouisville/Spring2020/CSharpProjects/CSharpClassProject/src/SvetlanaSurzhan.CodeLou.ExerciseProject.csproj",
         "packagesPath": "/Users/user/.nuget/packages/",
-        "outputPath": "/Users/user/Documents/CodeLouisville/Spring2020/C#ClassProject/CSharpClassProject/src/obj/",
+        "outputPath": "/Users/user/Documents/CodeLouisville/Spring2020/CSharpProjects/CSharpClassProject/src/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/Users/user/.nuget/NuGet/NuGet.Config"
