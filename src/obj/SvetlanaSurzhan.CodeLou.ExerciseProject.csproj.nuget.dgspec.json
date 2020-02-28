@@ -1,25 +1,27 @@
 {
   "format": 1,
   "restore": {
-    "/Users/user/Documents/CodeLouisville/Spring2020/CSharpProjects/CSharpClassProject/src/SvetlanaSurzhan.CodeLou.ExerciseProject.csproj": {}
+    "C:\\Users\\sveta\\Desktop\\SvetlanaSurzhan\\CSharpClassProject\\src\\SvetlanaSurzhan.CodeLou.ExerciseProject.csproj": {}
   },
   "projects": {
-    "/Users/user/Documents/CodeLouisville/Spring2020/CSharpProjects/CSharpClassProject/src/SvetlanaSurzhan.CodeLou.ExerciseProject.csproj": {
+    "C:\\Users\\sveta\\Desktop\\SvetlanaSurzhan\\CSharpClassProject\\src\\SvetlanaSurzhan.CodeLou.ExerciseProject.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/user/Documents/CodeLouisville/Spring2020/CSharpProjects/CSharpClassProject/src/SvetlanaSurzhan.CodeLou.ExerciseProject.csproj",
+        "projectUniqueName": "C:\\Users\\sveta\\Desktop\\SvetlanaSurzhan\\CSharpClassProject\\src\\SvetlanaSurzhan.CodeLou.ExerciseProject.csproj",
         "projectName": "SvetlanaSurzhan.CodeLou.ExerciseProject",
-        "projectPath": "/Users/user/Documents/CodeLouisville/Spring2020/CSharpProjects/CSharpClassProject/src/SvetlanaSurzhan.CodeLou.ExerciseProject.csproj",
-        "packagesPath": "/Users/user/.nuget/packages/",
-        "outputPath": "/Users/user/Documents/CodeLouisville/Spring2020/CSharpProjects/CSharpClassProject/src/obj/",
+        "projectPath": "C:\\Users\\sveta\\Desktop\\SvetlanaSurzhan\\CSharpClassProject\\src\\SvetlanaSurzhan.CodeLou.ExerciseProject.csproj",
+        "packagesPath": "C:\\Users\\sveta\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\sveta\\Desktop\\SvetlanaSurzhan\\CSharpClassProject\\src\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "/Users/user/.nuget/NuGet/NuGet.Config"
+          "C:\\Users\\sveta\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "netcoreapp3.1"
         ],
         "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -50,7 +52,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/3.1.101/RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.101\\RuntimeIdentifierGraph.json"
         }
       }
     }
