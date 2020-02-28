@@ -1,14 +1,37 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.IO;
+using System.Linq;
+using System.Text.Json;
+
 
 namespace SvetlanaSurzhan.CodeLou.ExerciseProject
 {
     class Program
     {
+        static string _studentRepositoryPath = $"{AppDomain.CurrentDomain.BaseDirectory}\\students.json"; // "C:Desktop/ProjectName/student.json"
+
+        static void Save(List<Student> listOfSudents)
+        {
+            using (var file = File.CreateText(_studentRepositoryPath))
+            {
+                
+                file.WriteAsync(JsonSerializer.Serialize(listOfSudents));
+
+            }
+
+        }
+
+    
+        static List<Student> Read(string filePath)
+        {
+            return JsonSerializer.Deserialize<List<Student>>(File.ReadAllText(filePath));
+        }
+
         static void Main(string[] args)
         {
-            List<Student> _allStudents = new List<Student>();
-            
+            List<Student> _allStudents = File.Exists(_studentRepositoryPath) ? Read(_studentRepositoryPath) : new List<Student>();
+
             _allStudents.Add(new Student(){
                 StudentId = 1,
                 FirstName = "Test",
@@ -68,6 +91,13 @@ namespace SvetlanaSurzhan.CodeLou.ExerciseProject
         {
             Console.WriteLine("Enter Student Id");
             var studentId = Convert.ToInt32(Console.ReadLine());
+            bool isStudentIdExist = students.Any(s => s.StudentId == studentId);
+            if (isStudentIdExist == true)
+            {
+                Console.WriteLine("This Student Id already exists.");
+                Console.ReadKey();
+                return students;
+            }
             Console.WriteLine("Enter First Name");
             var studentFirstName = Console.ReadLine();
             Console.WriteLine("Enter Last Name");
@@ -96,8 +126,10 @@ namespace SvetlanaSurzhan.CodeLou.ExerciseProject
             Console.WriteLine($"{studentRecord.StudentId} | {studentRecord.FirstName} {studentRecord.LastName} | {studentRecord.ClassName} "); ;
             
             ShowListOfStudents(students);
+            Save(students);
             Console.ReadKey();
             //add current studet to list
+
 
             return students;
         }
